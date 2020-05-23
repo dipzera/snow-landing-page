@@ -1,0 +1,52 @@
+// main: ../style.less
+
+.section {
+    background: #f9f9f9;
+    
+    &--white {
+        background: @white;
+    }
+}
+
+.section-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 100%;
+    width: 700px;
+    padding: 90px 0;
+    margin: 0 auto;
+    text-align: center;
+
+    @media @mobile {
+        padding: 40px 0;
+    }
+}
+
+.section-title {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: @black;
+
+    margin-bottom: 20px;
+
+    @media @mobile {
+        font-size: 30px;
+    }
+}
+
+.section-text {
+    font-size: 15px;
+    color: @gray;
+
+    @media @mobile {
+        font-size: 12px;
+    }
+}
+
+.section-signature {
+    margin-top: 30px;
+}

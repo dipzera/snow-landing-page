@@ -1,0 +1,93 @@
+// main: ../style.less
+
+.header {
+    width: 100%;
+    padding: 15px 5px;
+    position: absolute;
+
+    &.fixed {
+        position: fixed;
+        z-index: 1000;
+        background: rgba(0, 0, 0, .3);
+    }
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+.header-burger {
+    display: none;
+    border: 0;
+    background: none;
+    outline: 0;
+    width: 35px;
+    cursor: pointer;
+
+    @media @mobile {
+        display: block;
+    }
+}
+
+.nav {
+    display: flex;
+
+    &.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        z-index: 1000;
+        width: 100%;
+        margin-left: -20px;
+        background: rgba(0, 0, 0, .3)
+    }
+
+    @media @mobile {
+        display: none;
+        width: 0;
+    }
+}
+.nav-link {
+    text-decoration: none;
+    color: @white;
+    position: relative;
+    margin-left: 25px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+    
+    &:after {
+        content: '';
+        width: 0;
+        height: 2px;
+        background: @white;
+
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        z-index: 1;
+
+        transition: width .2s linear;
+    }
+
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+
+    @media @mobile {
+        margin: 0;
+        padding: 15px;
+    }
+}

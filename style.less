@@ -1,0 +1,47 @@
+// compress: true
+@import "vars";
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    color: @black;
+    margin: 0;
+    padding: 0;
+}
+
+*:before,
+*,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {  
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Blocks */
+
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/about";
+@import "blocks/stat";
+@import "blocks/projects";
+@import "blocks/review";
+@import "blocks/sponsors";
+@import "blocks/blogs";
+@import "blocks/contact";
+@import "blocks/footer";

@@ -1,0 +1,167 @@
+// main: ../style.less
+.contact {
+    background: #f9f9f9;
+    padding: 100px 0 90px 0;
+
+    @media @tablet {
+        padding: 30px 0 40px 0;
+    }
+}
+
+.contact-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.contact-info {
+    width: 40%;
+    max-width: 430px;
+    padding: 0 20px;
+
+    @media @laptop {
+        max-width: 650px;
+        width: 100%;
+        margin: 0 auto 35px;
+    }
+
+}
+
+.contact-info-title {
+    font-family: 'Playfair Display', sans-serif;
+    color: @black;
+    font-size: 38px;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+
+    @media @mobile {
+        font-size: 24px;
+    }
+}
+
+.contact-info-text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    color: @gray;
+
+    margin-bottom: 15px;
+
+    @media @mobile {
+        font-size: 12px;
+    }
+}
+
+.contact-info-info {
+    width: 100%;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media @mobile {
+        font-size: 12px;
+    }
+}
+
+.contact-info-info a {
+    text-decoration: none;
+    color: @black;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+input,
+textarea {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+input {
+    border: 0;
+    padding: 15px 20px;
+    color: #787878;
+    outline: 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    max-width: 670px;
+    position: relative;
+    padding: 0 15px;
+
+    @media @laptop {
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+.contact-form-name,
+.contact-form-email {
+    margin-bottom: 30px;
+}
+
+.contact-form-name {
+    width: 280px;
+
+    @media @laptop {
+        width: 100%;
+    }
+}
+
+.contact-form-email {
+    width: 320px;
+    position: absolute;
+    right: 15px;
+    z-index: 1;
+
+    @media @laptop {
+        position: static;
+        display: block;
+        width: 100%;
+    }
+    
+}
+
+.contact-form-title {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.contact-form-textarea {
+    width: 100%;
+    height: 170px;
+    padding: 15px 20px;
+    resize: none;
+    border: 0;
+    margin-bottom: 30px;
+    outline: 0;
+}
+
+.btn {
+    border: 0;
+    outline: 0;
+    background: @black;
+    color: @white;
+    padding: 15px 25px;
+    cursor: pointer;
+    
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
