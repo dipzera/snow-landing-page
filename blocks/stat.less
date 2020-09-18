@@ -1,72 +1,71 @@
 // main: ../style.less
 
 .stat {
-    background: url("/snow/images/patternbg.png") center no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 100px 0 90px;
+  background: url("/../images/patternbg.png") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 100px 0 90px;
 
-    @media @tablet {
-        padding: 50px 0 20px;
-    }
-
+  @media @tablet {
+    padding: 50px 0 20px;
+  }
 }
 
 .stat-inner {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
-    @media @tablet {
-        padding-left: 65px;
-    }
+  @media @tablet {
+    padding-left: 65px;
+  }
 
-    @media @mobile {
-        padding: 0;
-    }
+  @media @mobile {
+    padding: 0;
+  }
 }
 
 .stat-item {
-    position: relative;
-    padding: 0 0 0 65px;
+  position: relative;
+  padding: 0 0 0 65px;
 
-    @media @tablet {
-        width: 50%;
-        margin-bottom: 25px;
-    }
-    
-    @media @mobile {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto 20px;
-    }
+  @media @tablet {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+
+  @media @mobile {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 20px;
+  }
 }
 
 .stat-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .stat-number {
-    color: @white;
-    font-size: 18px;
-    font-family: 'Work Sans', sans-serif;
+  color: @white;
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
 
-    @media @mobile {
-        font-size: 14px;
-    }
+  @media @mobile {
+    font-size: 14px;
+  }
 }
 
 .stat-text {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    color: @white;
-    text-transform: uppercase;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: @white;
+  text-transform: uppercase;
 
-    @media @mobile {
-        font-size: 12px;
-    }
+  @media @mobile {
+    font-size: 12px;
+  }
 }

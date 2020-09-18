@@ -1,101 +1,97 @@
 // main: ../style.less
 
 .intro {
-    height: 100vh;
-    background: url("/snow/images/intro.jpg") center no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, .5);
-    background-blend-mode: multiply;
+  height: 100vh;
+  background: url("/../images/intro.jpg") center no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro-inner {
-    text-align: center;
-    color: @white;
-    max-width: 100%;
-    width: 730px;
-    margin: 0 auto;
+  text-align: center;
+  color: @white;
+  max-width: 100%;
+  width: 730px;
+  margin: 0 auto;
 }
 
 .intro-title {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 3px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
 
-    @media @mobile {
-        font-size: 14px;
-    }
+  @media @mobile {
+    font-size: 14px;
+  }
 
-    @media @mobile-sm {
-        font-size: 10px;
-    }
+  @media @mobile-sm {
+    font-size: 10px;
+  }
 
-    @media (max-height: 376px) {
-        font-size: 12px;
-    }
+  @media (max-height: 376px) {
+    font-size: 12px;
+  }
 }
 
 .intro-subtitle {
-    font-family: 'Playfair Display', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
 
-    @media @mobile {
-        font-size: 34px;
-    }
+  @media @mobile {
+    font-size: 34px;
+  }
 
-    @media (max-height: 376px) {
-        font-size: 20px;
-    }
+  @media (max-height: 376px) {
+    font-size: 20px;
+  }
 }
 
 .intro-button {
-    border: 1px solid #BFBFBF;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    outline: 0;
-    background: transparent;
-    bottom: 0;
-    z-index: 1;
-    position: relative;
-    cursor: pointer;
+  border: 1px solid #bfbfbf;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  outline: 0;
+  background: transparent;
+  bottom: 0;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
 
-    top: 50%;
-    transform: translatey(300%);
-    transition: all .2s;
+  top: 50%;
+  transform: translatey(300%);
+  transition: all 0.2s;
 
-    &:hover {
-        background: rgba(255, 255, 255, .3);
-        border-color: rgba(255, 255, 255, .3);
-    }
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
 
-    @media (max-height: 500px) {
-        transform: translateY(150%);
-    }
+  @media (max-height: 500px) {
+    transform: translateY(150%);
+  }
 }
 
 .intro-button:after {
-    position: absolute;
-    content: '';
-    width: 10px;
-    height: 10px;
-    border-left: 1px solid #bfbfbf;
-    border-bottom: 1px solid #bfbfbf;
-    transform: rotatez(-45deg);
-    top: 0;
-    left: 0;    
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    margin: auto;
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-left: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  transform: rotatez(-45deg);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  margin: auto;
 }
-
-
